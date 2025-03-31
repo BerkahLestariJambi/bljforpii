@@ -12,8 +12,7 @@ const TermCondition = () => {
             <p className="ml-3 text-gray-600">Sayarat dan Ketentuan</p>
           </div>
         </Link>
-      </div>
-      <div className="text-gray-600 p-4">
+      </div><div className="p-4 text-gray-600">
         <div>
           <p className="text-sm text-gray-50">
             Last updated: November 28, 2024
