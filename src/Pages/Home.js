@@ -156,9 +156,9 @@ function HomePage() {
   }
 
   useEffect(() => {
-    // if (!window.Pi) {
-    //   return alert("Please open this app in the Pi Browser.")
-    // }
+    if (!window.Pi) {
+      return alert("Please open this app in the Pi Browser.")
+    }
 
     loadProduct()
     loadBanners()
