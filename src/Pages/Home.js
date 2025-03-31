@@ -209,15 +209,15 @@ function HomePage() {
           </div>
         </div>
 
-        {/* <div className="flex items-center gap-2 text-sm text-white">
+        <div className="flex items-center gap-2 text-sm text-white">
           <EnvironmentOutlined />
           <span>Dikirim ke : Pilih Pengiriman</span>
-        </div> */}
+        </div> 
 
         <div className="flex justify-between items-center mb-4 mt-4">
           <div>
             <p className="text-gray-800">
-              Hai, {userData?.name || "Pengunjung!"}
+              Hai, {userData?.username || "Pengunjung!"}
             </p>
             <p className="text-gray-800 text-sm">
               {userData ? "Selamat Datang Kembali" : "Akses semua fitur, yuk"}
