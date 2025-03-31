@@ -28,12 +28,12 @@ const MaintenancePage = ({ title, message }) => {
             <h2 className="font-semibold text-gray-700 mb-2">Butuh Bantuan?</h2>
             <p className="text-gray-600">
               Hubungi tim support kami
-              {/* <a
-                href="mailto:support@example.com"
+              {<a
+                href="mailto:blj.jambi24@gmail.com"
                 className="text-gray-500 hover:text-gray-600 underline"
               >
-                support@example.com
-              </a> */}
+                blj.jambi24@gmail.com
+              </a> }
             </p>
           </div>
         </div>
