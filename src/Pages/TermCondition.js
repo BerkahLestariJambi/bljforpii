@@ -34,8 +34,7 @@ const TermCondition = () => {
             </h2>
             <div className="pl-4">
               <h3 className="text-lg font-medium mb-2">Interpretation</h3>
-  
-      <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4">
                 The words of which the initial letter is capitalized have
                 meanings defined under the following conditions. The following
                 definitions shall have the same meaning regardless of whether
