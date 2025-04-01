@@ -82,7 +82,7 @@ const ProfilePage = () => {
             className="w-12 h-12 rounded-full mx-auto"
           />
           <p className="ml-3 text-gray-800">
-            {settings?.app_name || "Berkah Lestari Jaya"}
+            {settings?.app_name || "Berkah Lestari Jambi"}
           </p>
         </div>
 
