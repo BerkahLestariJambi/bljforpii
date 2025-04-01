@@ -59,7 +59,7 @@ function StoreDetail() {
         setTotal(res?.data?.data?.total)
         setCurrentPage(res?.data?.data?.current_page)
         setProducts(res?.data?.data?.data || [])
-        setCategoryName(res?.data?.mitra?.shop_name || "Berkah Lestari Jaya")
+        setCategoryName(res?.data?.mitra?.shop_name || "Berkah Lestari Jambi")
       })
       .catch((err) => setLoading(false))
   }
@@ -129,7 +129,7 @@ function StoreDetail() {
             <div className="flex items-center font-bold text-lg">
               <ArrowLeftOutlined className=" text-gray-600" />
               <p className="ml-3 text-gray-600">
-                {categoryName || "Berkah Lestari Jaya"}
+                {categoryName || "Berkah Lestari Jambi"}
               </p>
             </div>
           </Link>
