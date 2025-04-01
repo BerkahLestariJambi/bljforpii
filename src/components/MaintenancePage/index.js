@@ -29,7 +29,7 @@ const MaintenancePage = ({ title, message }) => {
             <p className="text-gray-600">
               Hubungi tim support kami
               {<a
-                href="mailto:blj.jambi24@gmail.com"
+                href="mailto: blj.jambi24@gmail.com"
                 className="text-gray-500 hover:text-gray-600 underline"
               >
                 blj.jambi24@gmail.com
