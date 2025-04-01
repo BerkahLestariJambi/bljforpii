@@ -84,7 +84,7 @@ function HomePage() {
       scopes,
       onIncompletePaymentFound
     )
-  //  const authResult = { user: { username: "yudicandraa" } }
+  // const authResult = { user: { username: "yudicandraa" } }
     setLoadingAuth(false)
     if (authResult) {
       loginBE(authResult?.user)
