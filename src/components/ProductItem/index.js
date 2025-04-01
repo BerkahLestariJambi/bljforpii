@@ -879,207 +879,207 @@ export const ModalPembayaran = ({
         </div>
       )}
 
-     // <Modal
-      //  title={"Detail Pembelian"}
-      //  open={isModalOpen}
-      //  onOk={handleOk}
-      //  onCancel={handleCancel}
-      //  footer={null}
-     // >
-       // <div>
-        //  <div className="mt-4">
-         //   <span className="text-sm font-bold">Informasi Pengguna</span>
-         //   <Form
-            //  form={form}
-           //   layout="vertical"
+      <Modal
+        title={"Detail Pembelian"}
+        open={isModalOpen}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={null}
+      >
+        <div>
+          <div className="mt-4">
+            <span className="text-sm font-bold">Informasi Pengguna</span>
+            <Form
+              form={form}
+              layout="vertical"
               // initialValues={user}
-            //  className="mt-4"
-           //   onFinish={(value) => handleOk(value)}
-           // >
-            //  <Form.Item label="Username" name={"username"}>
-            //    <Input placeholder="Input username" readOnly />
-            //  </Form.Item>
-           //   <Form.Item
-             //   label="Nama Lengkap"
-              //  name={"name"}
-              //  rules={[
-               //   {
-                //    required: true,
-                //    message: "Nama Lengkap Tidak Boleh Kosong",
-               //   },
-              //  ]}
-             // >
-              //  <Input placeholder="Input Nama Lengkap" />
-             // </Form.Item>
-             // <Form.Item
-               // label="Telepon/No. hp"
-               // name={"telepon"}
-               // rules={[
-               //   {
-               //     required: true,
-               //     message: "Telepon Tidak Boleh Kosong",
-              //    },
-             //   ]}
-            //  >
-            //    <Input placeholder="Input Telepon/No. hp" />
-             // </Form.Item>
-             // <Form.Item
-              //  label="Email"
-             //   name={"email"}
-              //  rules={[
-              //    {
-              //      required: true,
-              //      message: "Email Tidak Boleh Kosong",
-             //     },
-            //    ]}
-           //   >
-             //   <Input placeholder="Input email" />
-             // </Form.Item>
-             // <Form.Item
-              //  label="Alamat"
-              //  name={"alamat"}
-               // rules={[
-               //   {
-                //    required: true,
-                 //   message: "Alamat Tidak Boleh Kosong",
-              //    },
-             //   ]}
-           //   >
-             //   <Input placeholder="Input alamat" />
-            //  </Form.Item>
-             // <Form.Item
-              //  label="Provinsi"
-              //  name={"provinsi_id"}
-              //  rules={[
-              //    {
-                //    required: true,
-               //     message: "Provinsi Tidak Boleh Kosong",
-               //   },
-              //  ]}
-             // >
-               // <Select
-                //  placeholder="Pilih Provinsi"
-                //  loading={provinsiLoading}
-                //  showSearch
-                 // optionFilterProp="children"
-                  //filterOption={(input, option) =>
-                  //  (option?.children?.toLowerCase() ?? "").includes(
-                    //  input.toLowerCase()
-                //    )
-                //  }
-                //  onChange={(val) => getKabupaten(val)}
-               // >
-                //  {provinsiData &&
-                   // provinsiData.map((item) => (
-                    //  <Select.Option key={item.pid} value={item.pid}>
-                    //    {item.nama}
-                  //    </Select.Option>
-                //    ))}
-             //   </Select>
-            //  </Form.Item>
-             // <Form.Item
-              //  label="Kota/Kabupaten"
-              //  name={"kabupaten_id"}
-               // rules={[
-                 // {
-                  //  required: true,
-                  //  message: "Kota/Kabupaten Tidak Boleh Kosong",
-               //   },
-              //  ]}
-             // >
-              //  <Select
-               //   placeholder="Pilih Kota/Kabupaten"
-               //   loading={kabupatenLoading}
-               //   showSearch
-              //    optionFilterProp="children"
-                  //filterOption={(input, option) =>
-                  //  (option?.children?.toLowerCase() ?? "").includes(
-                   //   input.toLowerCase()
-                  //  )
-                //  }
-                 // onChange={(val) => getKecamatan(val)}
-              //  >
-                //  {kabupatenData &&
-                   // kabupatenData.map((item) => (
-                   //   <Select.Option key={item.pid} value={item.pid}>
-                    //    {item.nama}
-                   //   </Select.Option>
-                  //  ))}
-              //  </Select>
-             // </Form.Item>
-             // <Form.Item
-              //  label="Kecamatan"
-               // name={"kecamatan_id"}
-               // rules={[
-                //  {
-                //    required: true,
-                //    message: "Kecamatan Tidak Boleh Kosong",
-              //    },
-            //    ]}
-         //     >
-               // <Select
-                //  placeholder="Pilih Kecamatan"
-                 // loading={kecamatanLoading}
-                 // showSearch
-                //  optionFilterProp="children"
-                //  filterOption={(input, option) =>
-                   // (option?.children?.toLowerCase() ?? "").includes(
-                   //   input.toLowerCase()
-                   // )
-                 // }
-                 // onChange={(val) => getKelurahan(val)}
-                //>
-                //  {kecamatanData &&
-                  //  kecamatanData.map((item) => (
-                  //    <Select.Option key={item.pid} value={item.pid}>
-                  //      {item.nama}
-                  //    </Select.Option>
-               //     ))}
-               // </Select>
-            //  </Form.Item>
-             // <Form.Item
-              //  label="Kelurahan"
-              //  name={"kelurahan_id"}
-              //  rules={[
-                //  {
-                 //   required: true,
-                 //   message: "Kelurahan Tidak Boleh Kosong",
-                //  },
-               // ]}
-             // >
-               // <Select
-                 // placeholder="Pilih Kelurahan"
-                 // loading={kelurahanLoading}
-                 // showSearch
-                 // optionFilterProp="children"
-                 // filterOption={(input, option) =>
-                   // (option?.children?.toLowerCase() ?? "").includes(
-                  //    input.toLowerCase()
-                  //  )
-                //  }
-              //  >
-               //   {kelurahanData &&
-                 //   kelurahanData.map((item) => (
-                  //    <Select.Option key={item.pid} value={item.pid}>
-                 //       {item.nama}
-                 //     </Select.Option>
-             //       ))}
-            //    </Select>
-          //    </Form.Item>
-        //    </Form>
-       //   </div>
+              className="mt-4"
+              onFinish={(value) => handleOk(value)}
+            >
+              <Form.Item label="Username" name={"username"}>
+                <Input placeholder="Input username" readOnly />
+              </Form.Item>
+              <Form.Item
+                label="Nama Lengkap"
+                name={"name"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Nama Lengkap Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Input placeholder="Input Nama Lengkap" />
+              </Form.Item>
+              <Form.Item
+                label="Telepon/No. hp"
+                name={"telepon"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Telepon Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Input placeholder="Input Telepon/No. hp" />
+              </Form.Item>
+              <Form.Item
+                label="Email"
+                name={"email"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Email Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Input placeholder="Input email" />
+              </Form.Item>
+              <Form.Item
+                label="Alamat"
+                name={"alamat"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Alamat Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Input placeholder="Input alamat" />
+              </Form.Item>
+              <Form.Item
+                label="Provinsi"
+                name={"provinsi_id"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Provinsi Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Select
+                  placeholder="Pilih Provinsi"
+                  loading={provinsiLoading}
+                  showSearch
+                  optionFilterProp="children"
+                  filterOption={(input, option) =>
+                    (option?.children?.toLowerCase() ?? "").includes(
+                      input.toLowerCase()
+                    )
+                  }
+                  onChange={(val) => getKabupaten(val)}
+                >
+                  {provinsiData &&
+                    provinsiData.map((item) => (
+                      <Select.Option key={item.pid} value={item.pid}>
+                        {item.nama}
+                      </Select.Option>
+                    ))}
+                </Select>
+              </Form.Item>
+              <Form.Item
+                label="Kota/Kabupaten"
+                name={"kabupaten_id"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Kota/Kabupaten Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Select
+                  placeholder="Pilih Kota/Kabupaten"
+                  loading={kabupatenLoading}
+                  showSearch
+                  optionFilterProp="children"
+                  filterOption={(input, option) =>
+                    (option?.children?.toLowerCase() ?? "").includes(
+                      input.toLowerCase()
+                    )
+                  }
+                  onChange={(val) => getKecamatan(val)}
+                >
+                  {kabupatenData &&
+                    kabupatenData.map((item) => (
+                      <Select.Option key={item.pid} value={item.pid}>
+                        {item.nama}
+                      </Select.Option>
+                    ))}
+                </Select>
+              </Form.Item>
+              <Form.Item
+                label="Kecamatan"
+                name={"kecamatan_id"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Kecamatan Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Select
+                  placeholder="Pilih Kecamatan"
+                  loading={kecamatanLoading}
+                  showSearch
+                  optionFilterProp="children"
+                  filterOption={(input, option) =>
+                    (option?.children?.toLowerCase() ?? "").includes(
+                      input.toLowerCase()
+                    )
+                  }
+                  onChange={(val) => getKelurahan(val)}
+                >
+                  {kecamatanData &&
+                    kecamatanData.map((item) => (
+                      <Select.Option key={item.pid} value={item.pid}>
+                        {item.nama}
+                      </Select.Option>
+                    ))}
+                </Select>
+              </Form.Item>
+              <Form.Item
+                label="Kelurahan"
+                name={"kelurahan_id"}
+                rules={[
+                  {
+                    required: true,
+                    message: "Kelurahan Tidak Boleh Kosong",
+                  },
+                ]}
+              >
+                <Select
+                  placeholder="Pilih Kelurahan"
+                  loading={kelurahanLoading}
+                  showSearch
+                  optionFilterProp="children"
+                  filterOption={(input, option) =>
+                    (option?.children?.toLowerCase() ?? "").includes(
+                      input.toLowerCase()
+                    )
+                  }
+                >
+                  {kelurahanData &&
+                    kelurahanData.map((item) => (
+                      <Select.Option key={item.pid} value={item.pid}>
+                        {item.nama}
+                      </Select.Option>
+                    ))}
+                </Select>
+              </Form.Item>
+            </Form>
+          </div>
 
-        //  <Button
-           // type="primary"
-           // className="bg-blue-500 mt-4 w-full"
-          //  onClick={() => form.submit()}
-          //  loading={isLoading}
-        //  >
-         //   Simpan Profile
-       //   </Button>
-     //   </div>
-     // </Modal>
-  //  </>
+          <Button
+            type="primary"
+            className="bg-blue-500 mt-4 w-full"
+            onClick={() => form.submit()}
+            loading={isLoading}
+          >
+            Simpan Profile
+          </Button>
+        </div>
+      </Modal>
+    </>
   )
 }
 
