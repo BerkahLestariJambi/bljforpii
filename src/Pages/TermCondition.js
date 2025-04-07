@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const TermCondition = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-black-100">
       <div className="p-4 sticky top-0 bg-gray-100">
         <Link to="/profile">
           <div className="flex items-center font-bold text-lg">
@@ -12,7 +12,8 @@ const TermCondition = () => {
             <p className="ml-3 text-gray-600">Sayarat dan Ketentuan</p>
           </div>
         </Link>
-      </div><div className="p-4 text-gray-600">
+      </div>
+      <div className="text-gray-600 p-4">
         <div>
           <p className="text-sm text-gray-50">
             Last updated: November 28, 2024
@@ -34,7 +35,7 @@ const TermCondition = () => {
             </h2>
             <div className="pl-4">
               <h3 className="text-lg font-medium mb-2">Interpretation</h3>
-        <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 The words of which the initial letter is capitalized have
                 meanings defined under the following conditions. The following
                 definitions shall have the same meaning regardless of whether
@@ -43,6 +44,7 @@ const TermCondition = () => {
 
               <h3 className="text-lg font-medium mb-2">Definitions</h3>
               <div className="space-y-3">
+ <p className="text-gray-600 mb-4">
                 {[
                   {
                     term: "Application",
@@ -99,12 +101,14 @@ const TermCondition = () => {
           <section>
             <h2 className="text-xl font-semibold mb-4">Acknowledgment</h2>
             <div className="space-y-4 text-gray-50">
+ <p className="text-gray-600 mb-4">
               <p>
                 These are the Terms and Conditions governing the use of this
                 Service and the agreement that operates between You and the
                 Company. These Terms and Conditions set out the rights and
                 obligations of all users regarding the use of the Service.
               </p>
+ <p className="text-gray-600 mb-4">
               <p>
                 Your access to and use of the Service is conditioned on Your
                 acceptance of and compliance with these Terms and Conditions.
